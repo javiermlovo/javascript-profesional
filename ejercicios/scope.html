@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope</title>
+</head>
+<body>
+    <a href="/ejercicios/">Go back</a>
+    <p><em>Abre la consola</em></p>
+    <script>
+        //global scope
+        var message = 'Hello platzi';
+            //variables declaradas fuera de una funcion o de un bloque se consideran scope global
+        //function scope
+        function printNumbers(){
+            for(var i = 0; i < 10 ; i++){
+                function eventuallyPrintNumber(n){
+                    setTimeout(function(){
+                        console.log(n);
+                    },1000);
+                }
+                eventuallyPrintNumber(i);
+            }
+        }
+        // printNumbers();
+        //block scope
+        function printNumbers2(){
+            for(let i = 0; i < 10 ; i++){
+                function eventuallyPrintNumber(n){
+                    setTimeout(function(){
+                        console.log(n);
+                    },1000);
+                }
+                eventuallyPrintNumber(i);
+            }
+        }
+        printNumbers2();
+        //module scope
+    </script>
+</body>
+</html>

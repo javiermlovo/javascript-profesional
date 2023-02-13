@@ -1,0 +1,25 @@
+{
+  "name": "platzi-media-player",
+  "version": "1.0.0",
+  "description": "Proyecto del curso profesioanl de JS",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javiermlovo/javascript-profesional.git"
+  },
+  "keywords": [
+    "platzi"
+  ],
+  "author": "Javier Medina",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/javiermlovo/javascript-profesional/issues"
+  },
+  "homepage": "https://github.com/javiermlovo/javascript-profesional#readme",
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}
